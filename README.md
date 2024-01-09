@@ -2,6 +2,12 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
+First, install project's dependencies: 
+
+```bash
+npm install
+```
+
 First, run the development server:
 
 ```bash
@@ -16,21 +22,18 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+# Test Read Contract
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+In order to test this app feature, you need to have MetaMask installed as an extension in your browser, you can find the link to install by clicking on the `Connect` button.
+ 
+After successfully connecting and redirected to your dashboard, you'll see your address in the top badge, then below is your balance.
 
-## Learn More
+The next form is where you can input an ERC-20 Contract address an look for its information.
 
-To learn more about Next.js, take a look at the following resources:
+# Test Send Transaction 
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+In order to send tokens from your account, click on `Send` in the top right corner, input the recipient address, and the amount you want to send and click `Send`
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+You need to confirm the transaction from the MetaMask popup. If you don't have enough balance, you will not be able to confirm.
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Finally, you can disconnect you wallet from the `Disconnect` button.
