@@ -1,3 +1,10 @@
+/**
+ * Format bigint balance to string with decimals and thousands separators.
+ * @param balance
+ * @param decimals
+ * @returns {string} formatted balance
+ */
+
 export function formatBalance(balance: bigint, decimals: number = 18): string {
   const formatter = new Intl.NumberFormat("en-US");
 

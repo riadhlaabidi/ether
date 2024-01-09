@@ -4,7 +4,7 @@ import AppWagmiProvider from "./providers/wagmi";
 import Header from "./components/header";
 import { headers } from "next/headers";
 import { cookieToInitialState } from "wagmi";
-import { config } from "@/wagmi.config";
+import { config } from "./config/wagmi.config";
 
 export const metadata: Metadata = {
   title: "Ether",

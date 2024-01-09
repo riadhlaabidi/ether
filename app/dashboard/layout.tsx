@@ -5,5 +5,5 @@ export default function DashboardLayout({
 }: {
   children: React.ReactNode;
 }) {
-  return <div className="mt-8">{children}</div>;
+  return <div className="mt-8 w-full lg:w-[70%]">{children}</div>;
 }

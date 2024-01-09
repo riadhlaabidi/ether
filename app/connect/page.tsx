@@ -29,7 +29,7 @@ export default function Connect() {
         {connectors.map((connector) => (
           <button
             key={connector.uid}
-            className="flex items-center justify-center gap-2 px-4 py-2 font-medium w-full bg-[#cd6116] rounded-md disabled:bg-[#cd6116] disabled:bg-opacity-50"
+            className="flex items-center justify-center gap-2 px-4 py-2 w-full bg-[#cd6116] rounded-md hover:bg-orange-500 font-medium"
             onClick={() => handleConnect(connector)}
           >
             {connector.icon && (
@@ -41,7 +41,7 @@ export default function Connect() {
       </div>
 
       {error && error.name === "UserRejectedRequestError" && (
-        <p className="text-red-500 mt-2 text-center">
+        <p className="text-amber-500 mt-2 text-center">
           Connection rejected. Please try again !
         </p>
       )}

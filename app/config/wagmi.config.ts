@@ -1,6 +1,6 @@
 import { http, createConfig, createStorage, cookieStorage } from "wagmi";
 import { mainnet, sepolia } from "wagmi/chains";
-import { metaMask } from "wagmi/connectors";
+import { injected, metaMask } from "wagmi/connectors";
 
 export const config = createConfig({
   ssr: true,
@@ -16,7 +16,7 @@ export const config = createConfig({
     storage: cookieStorage,
   }),
 
-  connectors: [metaMask()],
+  connectors: [metaMask(), injected()],
 
   // disable multi injected provider discovery
   multiInjectedProviderDiscovery: false,

@@ -15,7 +15,7 @@ export default function Header() {
   }
 
   return (
-    <header className="flex justify-between items-center w-full px-4 py-6 md:w-2/3 m-auto">
+    <header className="flex justify-between items-center w-full px-4 py-6 lg:w-2/3 m-auto">
       <Link href={"/"}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
